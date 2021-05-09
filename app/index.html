@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ethereum notebook</title>
+    <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href="./app.css" rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="./app.js"></script>
+</head>
+<body>
+
+
+<h1 align="center">Ethereum notebook</h1>
+<br>
+<h4>Your current address</h4>
+<h4 id = "own_address"></h4>
+
+<br><h2 align="center">Add an entry:</h2></br>
+
+<div style="text-align: center"><textarea class="form-control" rows="3" id="note_text" placeholder="Enter your text here"></textarea></div>
+<br><button class="btn btn-default" id="addNote" onclick="App.addNote()">Add a note</button>
+
+<br><button class="btn btn-default" id="showNotes" onclick="App.showNotes()">Get Your Notes</button>
+<br><button class="btn btn-default" id="refreshNotes" onclick="App.refreshNotes()">Refresh</button>
+<form class="form-inline">
+    <h5 id="check_status"></h5>
+</form>
+
+
+<br>
+<h2>List of your entries:</h2>
+<br>
+<span id="status"></span>
+<br><br>
+<br><br>
+
+<br><br>
+</body>
+</html>
